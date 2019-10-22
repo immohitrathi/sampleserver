@@ -1,0 +1,105 @@
+.iastroc{
+  padding-top:8px;
+  background-color:#fafafa;
+  margin-left:-16px;
+  margin-right: -16px;
+  .scrlcontent{
+
+  }
+  h3{
+    font-family: NotoSans-Bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform:uppercase;
+    padding-left:16px;
+  }
+  ul{
+    li{
+      background-color:#fff;
+      border-radius: 4px;
+      border: solid 1px #ce4649;
+      display:inline-block;
+      width: 144px;
+      height:160px;
+      margin-right:16px;
+      text-align: center;
+      padding-top:28px;
+      img{
+        width:80px;
+      }
+      &:first-child{
+        margin-left:15px;
+      }
+      a{
+        label{
+          font-family: NotoSans-SemiBold;
+          margin-top:14px;
+          margin-bottom:0px;
+          font-size:16px;
+          color:#1a1a1a;
+          letter-spacing: 0.2px;
+          &.small{
+            margin-top:4px;
+            font-family: NotoSans;
+            font-size:12px;
+            line-height: 16px;
+            letter-spacing: normal;
+            color:#1a1a1a;
+          }
+        }
+        
+      }
+    }
+  }
+  a.seeallm{
+    color:#ce4649;
+    line-height: 48px;
+    text-align:center;
+    display:block;
+    font-family:NotoSans-SemiBold;
+    font-size:12px;
+    margin:8px 0px;
+    text-transform:uppercase;
+    span{
+      font-size:20px;
+      padding-left:2px;
+      color:#ce4649;
+    }
+  }
+
+  .topc1{
+    padding-left:53px;
+    position: relative;
+    h4{
+      line-height: 40px;
+      font-family: NotoSans-Bold;
+      font-size: 16px;
+      color:#1a1a1a;
+    }
+    img{
+      position: absolute;
+      left:0px;
+    }
+  }
+  label.date{
+    margin-top:14px;
+    color:#999;
+    font-size: 12px;
+  }
+  .desc{
+    margin-top:6px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    max-height: 92px;
+    overflow-y: hidden;
+    padding-bottom:0px;
+  }
+  .dflex{
+    margin-top:8px;
+  }
+}

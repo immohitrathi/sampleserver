@@ -1,0 +1,561 @@
+.ccard{
+    border-radius: 4px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.11);
+    background-color: #ffffff;
+    padding: 8px 12px;
+    font-size: 12px;
+    display: block;
+    margin: 0px 15px;
+    width: calc(100% - 54px);
+    margin-top: 15px;
+    .pright{
+        padding-right:10px;
+    }
+    .series{
+        line-height: 12px;
+        font-size:10px;
+        color:#999999;
+    }
+    .type{
+        float: right;
+        width: 30px;
+        padding-left: 0px;
+        overflow: hidden;
+        text-align: right;
+        height: 10px;
+    }
+    .flag{
+        max-width:40px;
+    }
+    td{
+        vertical-align: top;
+    }
+    .scorecard{
+        width:50%;
+    }
+    td.team{
+        width:60px;
+        text-align: center;
+        .teamname{
+            margin-top:10px;
+        }
+    }
+    .score{
+        font-size:16px;
+        font-family: NotoSans-SemiBold;
+        color:#2c2c2c;
+        font-weight: 600;
+        text-align: center;
+        padding-top:4px;
+        span{
+            display: block;
+            font-family: NotoSans;
+            font-size: 10px;
+            font-weight: normal;
+            letter-spacing: 0.2px;
+            color: #999999;
+            margin-top:4px;
+        }
+    }
+
+
+}
+
+.live, .nolive{
+    color: #6fd6ec;
+    font-size:12px;
+    font-family: NotoSans-SemiBold;
+}
+.nolive{
+    color:#6fd6ec;
+}
+.liveblue{
+    color:#6fd6ec;
+}
+
+.match-summary{        
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    color: #ce4649;
+    line-height: 22px;
+    position: relative;
+    /* padding-top:2px; */
+    overflow:hidden;
+    padding-right:16px;
+    font-family: NotoSans-SemiBold;
+    span{
+        font-family: NotoSans-SemiBold;
+        color: #ce4649;
+    }
+    &:after{
+        content:'\203A';
+        position: absolute;
+        right: 0px;
+        font-size:28px;
+        font-family: NotoSans;
+        margin-top:-3px;
+    }
+}
+
+.scont{
+    border-bottom: solid 0.5px #efefef;
+    padding-bottom: 8px;
+    margin-bottom: 6px;
+    margin-top:12px;
+}
+
+.series-title{
+    font-size: 12px;
+    font-family: NotoSans-SemiBold;
+    letter-spacing: 0.2px;
+    color: #1a1a1a;
+    span{
+        color: #1a1a1a;
+        font-family: NotoSans-SemiBold;
+    }
+}
+
+
+.other{
+    font-size: 10px;
+    letter-spacing: 0.1px;
+    color: #999999;
+    text-align: center;
+    line-height: 18px;
+    /* border-top: solid 1px #efefef; */
+    border-bottom: solid 1px #efefef;
+    padding: 10px;
+    margin-left:0px;
+    margin-right:0px;
+    span{
+        padding: 0px 3px;
+        font-weight: bold;
+        color:16px;
+    }
+}
+
+
+.cscorecard{
+    display: table;
+    width:100%;
+    div.score{
+        min-width: 50px;
+    }
+    div.teamname, div.score{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        flex-grow: 1;
+        flex-basis: 0;
+        img{
+            max-width:50px;
+        }
+    }
+    .teamname1{
+        font-size:12px;
+        color: #1a1a1a;
+        margin-top:10px;
+    }
+    .run{
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        color: #2c2c2c;
+    }
+    .small{
+        font-size: 10px;
+        letter-spacing: 0.2px;
+        color: #999999;
+        line-height: 18px;
+    }
+}
+
+.commentary{
+    font-size: 12px;
+    line-height: 1.5;
+    color: #1a1a1a;
+}
+
+.commentary li {
+    display: flex;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 10px 0;
+    font-size:12px;
+    &.over-detail{
+        color: #17202b;
+        font-family: NotoSans-SemiBold;
+    }
+}
+.commentary li div {
+    width: 85%;
+}
+
+.commentary li div:first-child {
+    width: 13%;
+    text-align: center;
+    font-weight: 700;
+    color: #2c2c2c;
+}
+
+.comm-no-ball div:first-child {
+    display: none;
+}
+
+.comm-no-ball div {
+    width: 100%!important;
+}
+
+.commentary li div.run {
+    line-height: 23px !important;
+    width:24px;
+    border-radius: 50%;
+    border:1px solid #ccc;
+    background: #fff;
+    color:#000;
+}
+
+.run_4 {
+    background-color: #7ed321!important;
+    border: 1px solid #7ed321!important;
+    color: #fff!important;
+}
+
+.run_n, .run_w, .run_W {
+    background-color: #ce4649!important;
+    border: 1px solid #ce4649!important;
+    color: #fff!important;
+}
+
+.run_6 {
+    background-color: #bd10e0!important;
+    border: 1px solid #bd10e0!important;
+    color: #fff!important;
+}
+
+
+.detail-scorecard {
+    margin: 10px 0 0;
+    
+    width: 100%;
+    overflow: hidden
+}
+
+.d-s-heading:before {
+    content: "";
+    padding: 20px;
+    position: absolute;
+    margin-top: 19px
+}
+
+.d-s-heading.active:before,.d-s-heading:before {
+    background: url(/images/up-down.png) no-repeat;
+    background-size: 45px
+}
+
+.d-s-heading.active:before {
+    background-position: -27px 0
+}
+
+.d-s-heading {
+    width: 100%;
+    font-size: 16px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)
+}
+
+.detail-scorecard.active .d-s-heading {
+    box-shadow: 0 0 0 0 rgba(0,0,0,.16),0 0 0 0 rgba(0,0,0,.12)
+}
+
+.d-s-heading .teamname {
+    float: left;
+    color: #1a1a1a;
+    padding-left:10px;
+    font-family: NotoSans-SemiBold;
+}
+
+.d-s-heading .teamscore {
+    float: right;
+    padding-right: 10px;
+    color: #000;
+    font-family: NotoSans-SemiBold;
+}
+
+.howout {
+    color: #737373;
+    padding: 6px 0 0;
+    font-size: 9px;
+    line-height: 16px;
+}
+
+.fallofwickets {
+    line-height: 16px;
+}
+
+/* .detail-scorecard .details {
+    display: none;
+} */
+
+.detail-scorecard.active {
+    .details, .score-table {
+        display: block;
+    }
+}
+
+
+
+.score-table {
+    width: 100%;
+    font-size: 12px;
+    display: none;
+}
+
+.score-table th {
+    color: #999;
+    padding: 10px;
+    font-family: NotoSans-SemiBold;
+}
+
+.score-table td {
+    padding: 10px;
+    color: #000;
+    border-top: 1px solid #f5f5f5;
+}
+
+.cricket{
+    .wcard{
+        padding-top:9px;
+    }
+}
+
+
+.wontoss{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    content: ' ';
+    background: url(/images/icons.svg) no-repeat 50% -1534px;
+    margin: 0px 5px;
+}
+
+.umtitle{
+    font-family:NotoSans-Bold;
+    font-size:16px;
+    line-height: 24px;
+    margin: 20px 0px 0px 15px;
+    text-transform: uppercase;
+    color:#1a1a1a;
+}
+
+.venue{
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+    width: 95%;
+    margin-top: 10px;
+    border-top: solid 1px #efefef;
+    padding: 8px 0px 3px;
+    line-height: 16px;
+}
+.overhidden{
+    overflow:hidden;
+}
+.summarytabs{
+    display:flex;
+    padding: 0px 25px;
+    border-bottom: solid 1px #f3f3f3;
+    position: relative;
+    /* border-top: solid 3px #efefef; */
+    div{
+        font-family: NotoSans-SemiBold;
+        width:50%;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .taba.active ~ .magic-line{
+        
+        left: 20px;
+    }
+    .tabb.active ~ .magic-line{
+        left:50%;
+    }    
+    .magic-line{
+        border-radius: 2.5px;
+        background-color: #1a1a1a;
+        border: solid 2px #1a1a1a;
+        display: inline-block;
+        position: absolute;
+        width: calc((100% - 64px) / 2);
+        bottom: 0;
+        left: 20px;
+        -webkit-transition: 0.3s left ease 0s;
+        -moz-transition: 0.3s left ease 0s;
+        transition: 0.3s left ease 0s;
+        margin: 0 5px;
+    }
+}
+
+.score{
+    &.active, &.active1{
+        position:relative;
+        &:after{
+            content: ' ';
+            background: url(/images/icons.svg) no-repeat 50% -1484px;
+            position: absolute;
+            right: -16px;
+            width: 20px;
+            height: 19px;
+            top:6px;
+        }
+    }
+    &.active1{
+        &:after{
+            right:auto;
+            left:-12px;
+        }
+    }
+}
+
+.cricket{
+    .score{
+        &.active{
+            &:after{
+                left: 38px;
+            }
+        }
+        &.active1{
+            &:after{
+                right:auto;
+                left:-16px;
+            }
+        }
+    }
+}
+
+.hpcricket_cont {
+    .score{
+        &.active{
+            &:after{
+                left: 66px;
+            }
+        }
+        &.active1{
+            &:after{
+                right:auto;
+                left:8px;
+            }
+        }
+    }
+}
+
+.ccard {
+    .score{
+        &.active,&.active1{
+            &:after{
+                top:6px;
+            }
+        }
+    }
+}
+
+
+
+.cicon, .licon{
+    padding-left:15px;
+    &:before{
+        content: ' ';
+        background-color: #adfa59;
+        border: solid 2px #7ed321;
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        position: absolute;
+        left: 12px;
+        margin-top:4px;
+    }
+}
+.licon{
+    &:before{
+        background-color: #adfa59;
+        border: solid 2px #7ed321;
+    }
+}
+.overd{
+    font-size:10px;
+    color:#999;
+
+}
+.nomatch{
+    text-align: center;
+    padding:50px 30px;
+    h3{
+        
+        margin-top: 20px;
+    }
+    img{
+        width:200px;
+    }
+}
+.cricket-refresh{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(/images/icons.svg) no-repeat -17px -706px;
+    right: 15px;
+    margin-top: -20px;
+    &.anim{
+        -webkit-animation: rotation 0.5s 1 linear;
+    }
+}
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+.criborder{
+    width:100%;
+    margin-left:0px;
+    margin-right:0px;
+}
+.hpcricket_cont{
+    margin-top:15px;
+    .ccard{
+        background:#fff;
+        padding:0px;
+        margin:0px;
+        width:100%;
+        padding-top:6px;   
+        padding-bottom:6px;     
+        .score{
+            color:#1a1a1a;
+        }
+        td.team {
+            .teamname{
+                color:#1a1a1a;
+            }
+        }
+    }
+    .scont{
+        border-bottom:solid 0.5px #efefef;
+    }
+    .match-summary{
+        margin:0px 15px;
+    }
+}
+
+.hpcricket_cont {
+    margin-bottom:10px;
+    .ccard{
+        margin:0px;
+    }
+}
+.bold{
+    font-family: Notosans-SemiBold;
+}

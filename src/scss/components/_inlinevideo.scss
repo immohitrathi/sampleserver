@@ -1,0 +1,126 @@
+.inline-video-wrapper{background: #fafafa; margin-left:-16px; margin-right:-16px;}
+.inline-video-heading,.inline-photo-heading, .news-headline a.seeall, .news-headline span.theading{font-size:1.4rem;padding:10px 16px 0;font-weight: 600;line-height: 2.2rem;overflow: hidden; color:#404040;}
+.inline-video-heading a,.inline-photo-heading a, .news-headline a.seeall{float: right;color:#cc0000;}
+.theading{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-width: 80%;
+  float: left; 
+
+  text-transform: uppercase;
+  font-family: NotoSans-Bold;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: #1a1a1a;  
+}
+
+.commonlist_con  div.item {
+  display: inline-block;
+  width: 48.9%;
+  min-height: 168px;
+  vertical-align: top;
+  box-sizing: border-box;
+  border-top: 0
+}
+
+.commonlist_con.smallthumb  div.item {
+  width: 50%;
+  padding: 10px 16px 5px;
+  position:relative;
+}
+.commonlist_con.smallthumb  div.item.first{
+  width:100%;
+  padding:10px 0px 5px;
+  img{
+    min-height: 200px;
+  }
+}
+
+
+.commonlist_con.smallthumb .first div .img_wrap {
+  min-height: 203px;
+  background: none; 
+  overflow:hidden;
+}
+
+.commonlist_con.smallthumb span.ntitle{
+  font-family: NotoSans-Bold;
+  color:#1a1a1a;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 34px;
+  overflow-y:hidden;
+}
+
+
+.commonlist_con .first span.ntitle {
+  display: block;
+  padding: 8px 16px;
+  font-size:16px;
+  line-height: 24px;
+  max-height: 45px;
+}
+.commonlist_con span.ntitle {
+  display: block;
+  padding: 8px 0px;
+  font-size:14px;
+  line-height: 20px;
+}
+
+.commonlist_con.smallthumb div.item:nth-child(2){
+  padding-right:0px;
+}
+
+.round{
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.type_icon.ad_video {
+  border: 0;
+    background: transparent;
+    background-image: url(/photos/46406300.svg);
+    width: 48px;
+    z-index: 2;
+    height: 48px;
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+}
+.type_icon.ad_video.small{
+  width:24px;
+  height:24px;
+  top: 44px;
+  left: calc(50% - 12px);
+}
+
+
+.smallcard{
+  height:88px;
+}
+
+
+a.seeall{
+  color:#ce4649;
+  line-height: 48px;
+  text-align:center;
+  display:block;
+  font-family:NotoSans-SemiBold;
+  font-size:12px;
+  text-transform:uppercase;
+  span{
+    font-size:20px;
+    padding-left:2px;
+  }
+}

@@ -1,0 +1,96 @@
+
+/*========================
+    BUTTON styles
+  =======================*/
+.clap {
+  position: relative;
+  width: 55px;
+  height: 57px; 
+  background: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all .4s ease; /* Safari and Chrome */
+  -moz-transition: all .4s ease; /* Firefox */
+  -ms-transition: all .4s ease; /* IE 9 */
+  -o-transition: all .4s ease; /* Opera */
+  transition: all .4s ease;
+}
+.clap:active {
+  -webkit-transform:scale(1.2); /* Safari and Chrome */
+  -moz-transform:scale(1.2); /* Firefox */
+  -ms-transform:scale(1.2); /* IE 9 */
+  -o-transform:scale(1.2); /* Opera */
+   transform:scale(1.2);
+}
+.clap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+.clap:hover {
+   cursor: pointer;
+   /* border: 1px solid rgba(39,174,96 ,1); */
+   transition: border-color 0.3s ease-in;
+}
+
+.clap svg{
+  width: 20px;
+  height: 20px;
+}
+
+.clap svg.checked {
+      fill: rgba(39,174,96 ,1);
+      stroke: #fff;
+      stroke-width: 1px;
+}
+.clapCount {
+    position: absolute;
+    top: -10px;
+    left: 4px;
+    font-size: 1.2rem;
+    color: #fff;
+    background:#b3404a;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    display: inline;
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .clapcountTotal {
+    /* position: relative; */
+    font-size: 12px;
+    /* width: 43px; */
+    text-align: center;
+    margin-left: 5px;
+    display: inline;
+    background-color: #b3404a;
+    border-radius: 8px;
+    height: auto;
+    color: #fff;
+    line-height: 18px;
+    padding:0px 5px;
+    text-transform: lowercase;
+  }
+
+
+
+
+/*====================
+        Message
+======================*/
+#message {
+  position: absolute;
+  bottom: 20px;
+  color: rgba(39,174,96 ,1);
+  line-height: 1.52rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,130 @@
+.video-listing{
+    ul{
+        list-style: none;
+        li.card{
+            width: auto;
+            min-height: 175px;
+            position: relative;
+            a{
+                display: block;
+                span.displayimage{
+                    display: block;
+                    position: relative;
+                    img{
+                        min-height: 175px;
+                        background-repeat: no-repeat;
+                    }
+                }
+                .title{
+                    padding: 0 16px;
+                    margin: 10px 0 16px 0;
+                    -webkit-line-clamp: 3;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+}
+.videoshow, .video-listing.livetv {
+    margin-top: -10px;
+    .title-card{
+        overflow: hidden;
+        display: flex;
+        border-bottom: 1px solid #000000;
+        padding: 0 0 8px 0;
+        margin: 10px 16px;
+        h1{
+            display: inline-flex;
+            align-items: center;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .share{
+            display: inline-flex;
+            align-items: flex-end;
+            width: 50px;
+            justify-content: flex-end;
+        }
+    }
+    ul{
+        padding: 0 16px;
+    }
+    .listing-title{
+        font-family: NotoSans-Bold;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.2px;
+        color: #1a1a1a;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    li.card{
+        display: inline-block;
+        width: 50% !important;
+        vertical-align: top;
+        box-sizing: border-box;
+        &:nth-of-type(even){
+            padding-left: 2%;
+        }
+        &:nth-of-type(odd){
+            padding-right: 2%;
+        }
+        .displayimage{
+            position: relative;
+            display: inline-block;
+        }
+        img{
+            border-radius: 5px;
+            min-height: 90px !important;
+            height: 90px;
+        }
+        .title{
+            padding: 0 !important;
+        }
+    }
+}
+
+.video-listing.livetv{
+    margin-top: 0;
+    li.card{
+        width: 48% !important;
+        min-height: 125px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.11);
+        &:nth-of-type(even){
+            margin-left: 2%;
+            padding-left: 0;
+        }
+        &:nth-of-type(odd){
+            margin-right: 2%;
+            padding-right: 0;
+        }
+        
+        .displayimage{
+            background-image: linear-gradient(98deg, #255BB9, #142D5A);
+            border-radius: 5px;
+            width: 100%;
+        }
+        .title{
+            color: #ce4649;
+            font-family: NotoSans;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.33;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            &:after{
+                content: '\203A';
+                position: absolute;
+                right: 10px;
+                font-size: 28px;
+                font-family: NotoSans;
+                margin-top: -15px;
+            }
+        }
+    }
+}

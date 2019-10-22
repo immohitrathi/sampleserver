@@ -1,0 +1,2 @@
+export const ASTRO_LISTING = 'ASTRO_LISTING';
+export const ASTRO_DETAIL = 'ASTRO_DETAIL';

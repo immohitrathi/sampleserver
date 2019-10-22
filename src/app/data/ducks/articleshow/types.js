@@ -1,0 +1,2 @@
+export const FETCH_ARTICLE = 'FETCH_ARTICLE';
+export const NEXT_ARTICLE = 'NEXT_ARTICLE';

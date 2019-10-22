@@ -1,0 +1,257 @@
+
+/* Style the tab */
+.loot-lang-list {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 50px;
+}
+.loot-lang-list ul{
+    list-style: none;
+    overflow-x: scroll; 
+    white-space: nowrap;
+}
+
+/* Style the buttons that are used to open the tab content */
+.loot-lang-list li {
+    border-radius: 25px;
+    border: solid 1px #ce4649;
+    display: inline-block;
+    transition: 0.3s;
+    text-align: center;
+    color: #ce4649;
+    padding: 10px 25px;
+    margin: 8px 5px;
+}
+.loot-lang-list li a {color: inherit;}
+.loot-lang-list li span {
+    font-size: 12px;
+}
+/* Create an active/current tablink class */
+.loot-lang-list li.active {
+    background-color: #ce4649;
+    color: #ffffff;
+}
+.loot-tnc header.heading {
+    height: auto;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    width: auto;
+    background: #f8f8f8;
+}
+.loot-tnc article {
+    margin: 2%;
+    font-size: 12px;
+    line-height: 15px;
+}
+.loot-tnc article ul, .loot-contest article ul {list-style: none; padding-left: 25px;}
+.loot-tnc article ul li, .loot-contest article ul li{padding: 5px;}
+.loot-tnc article ul li::before, .loot-contest article ul li:before {content: "•"; color: #ce4649; display: inline-block; width: 1em; margin-left: -1em; font-size: 18px; margin-top: -2px;}
+.loot-faq, .loot-tnc, .loot-contest{ background: #f8f8f8; min-height: calc(100vh - 50px)}
+.loot-faq .qna-wrapper{padding: 10px;font-size: 12px;border-bottom: 1px solid #e5e5e5;}
+.loot-faq .ques, .loot-faq .ans {padding: 5px 0; line-height: 20px;display: flex;}
+.loot-faq .qna-wrapper span.icon{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    color: #ffffff;
+}
+.loot-faq .faq-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: #000000;
+    padding: 15px 10px 5px 10px;
+}
+.loot-faq .qna-wrapper .ques span.icon{background-color: #ce4649;}
+.loot-faq .qna-wrapper .ans span.icon{background-color: #808080;}
+.loot-faq .qna-wrapper span.text{display: inline-flex; align-items: center; padding-left: 10px; width: calc(100% - 20px);}
+.loot-contest article{font-size: 14px; margin: 2%; line-height: 18px;}
+.loot-contest article .howto{margin: 15px 0 10px 0;}
+.otherprizes{margin: 5px 0 10px 0;}
+.otherprizes ol{list-style: none; margin-top: 10px;}
+.otherprizes ol li{padding: 15px 10px; border: 1px solid; margin: 10px 0; display: flex; border-radius: 5px; position: relative;}
+.otherprizes ol li span.icon{width: 30px; height: 35px; display: inline-block; background-size: 30px 35px;}
+.otherprizes ol li div{width: calc(100% - 90px); align-items: center; padding-left: 10px;}
+.otherprizes ol li div span{display: block;}
+.otherprizes ol li div span.prize{font-weight: bold;}
+.otherprizes ol li.rank_1  span.icon{background-image: url('/photos/Rank1.png');}
+.otherprizes ol li.rank_2  span.icon{background-image: url('/photos/Rank2.png');}
+.otherprizes ol li.rank_3  span.icon{background-image: url('/photos/Rank3.png');}
+.otherprizes ol li.rank_4  span.icon{background-image: url('/photos/Rank4.png');}
+.otherprizes ol li.rank_1 div span.rangeText{color: #4c96a0;}
+.otherprizes ol li.rank_2 div span.rangeText{color: #d57e4b;}
+.otherprizes ol li.rank_3 div span.rangeText{color: #db4d4f;}
+.otherprizes ol li.rank_4 div span.rangeText{color: #d54f77;}
+.otherprizes ol li img {position: absolute; right: 0; width: 60px; margin-top: -10px; vertical-align: middle;}
+.otherprizes ol li.rank_1{border-color: #4c96a0;}
+.otherprizes ol li.rank_2{border-color: #d57e4b;}
+.otherprizes ol li.rank_3{border-color: #db4d4f;}
+.otherprizes ol li.rank_4{border-color: #d54f77;}
+.loot-contest .banner .congotext{
+    text-align: center;
+    font-size: 22px;
+    line-height: 22px;
+    padding-top: 20px;
+}
+.loot-contest .banner .prizename{
+    text-align: center;
+    font-size: 30px;
+    color: #f72741;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.faq-banner{
+    background-color: #fff;
+    padding: 20px;
+}
+.faq-banner .faq-before, .faq-banner .faq-after{ text-align: center;}
+.faq-banner .faq-before .icon{
+    background: url('/photos/faqbefore.svg');
+    width: 80px;
+    height: 75px;
+    /* text-align: center; */
+    margin: auto;
+}
+.faq-banner .faq-after .icon{
+    background: url('/photos/faqafter.svg');
+    width: 80px;
+    height: 75px;
+    /* text-align: center; */
+    margin: auto;
+}
+.faq-banner .faq-before .title, .faq-banner .faq-after .title{
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  color: #444444;
+  margin: 30px 0;
+}
+.faq-banner .faq-before .sub-title, .faq-banner .faq-after .sub-title{
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  color: #858585;
+}
+.refer-page-wrapper, .token-prize-wrapper {
+    /* height: 100vh; */
+    background-color: #f8f8f8; 
+}
+.refer-page-wrapper .inner-content{padding:20px; text-align: center;}
+.refer-page-wrapper .banner img{width: 100%;}
+.refer-page-wrapper h1{
+    font-size: 18px;
+    line-height: 20px;
+    color: #1a1a1a;
+}
+.refer-page-wrapper h1, .refer-page-wrapper h2, .refer-page-wrapper h3, .refer-page-wrapper h4{display: block;}
+.refer-page-wrapper .title-card{
+    border-bottom: 1px solid #804ac3;
+    padding-bottom: 5px;
+}
+.refer-page-wrapper h4{
+    font-size: 12px;
+    line-height: 18px;
+    color: #5722a3;
+    padding: 5px 0;
+}
+.refer-page-wrapper .subtitle-card h3{
+    color: #5a26a6;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+.refer-page-wrapper .offer-validity{
+    padding: 10px 5px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+    background: linear-gradient(to right, #402bb2 , #af61d0);
+    border-radius: 4px;
+    margin: 0 -10px;
+}
+.refer-page-wrapper h2, .token-prize-wrapper h3{
+    padding: 15px 0;
+    text-align: left;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-size: 18px;
+}
+.refer-page-wrapper .howto, .refer-page-wrapper .tnc , .token-prize-wrapper .tnc{
+    font-size: 16px;
+    line-height: 18px;
+    color: #1a1a1a;
+}
+.refer-page-wrapper .howto li, .refer-page-wrapper .tnc li, .token-prize-wrapper .tnc li{
+    padding: 10px 0;
+    text-align: left;
+}
+.refer-page-wrapper .howto img{
+    padding: 10px 0;
+}
+
+.refer-page-wrapper .otherprizes ol li.rank_1  span.icon{background-image: url('/photos/rank1.svg');}
+.refer-page-wrapper .otherprizes ol li.rank_2  span.icon{background-image: url('/photos/rank1.svg');}
+.refer-page-wrapper .otherprizes ol li.rank_3  span.icon{background-image: url('/photos/rank1.svg');}
+.refer-page-wrapper .otherprizes ol li.rank_4  span.icon{background-image: url('/photos/rank4.svg');}
+.refer-page-wrapper .otherprizes ol li.rank_5  span.icon{background-image: url('/photos/rank5.svg');}
+.refer-page-wrapper .otherprizes ol li.rank_6  span.icon{background-image: url('/photos/rank6.svg');}
+
+.refer-page-wrapper .otherprizes ol li.rank_1{border-color: #f9813a;}
+.refer-page-wrapper .otherprizes ol li.rank_2{border-color: #f9813a;}
+.refer-page-wrapper .otherprizes ol li.rank_3{border-color: #f9813a;}
+.refer-page-wrapper .otherprizes ol li.rank_4{border-color: #a7c424;}
+.refer-page-wrapper .otherprizes ol li.rank_5{border-color: #82c7d2;}
+.refer-page-wrapper .otherprizes ol li.rank_6{border-color: #eb497b;}
+.refer-page-wrapper .otherprizes ol li div span.rangeText{font-size: 13px;padding-bottom: 5px;}
+.refer-page-wrapper .otherprizes ol li.rank_1 div span.rangeText{color: #f9813a;}
+.refer-page-wrapper .otherprizes ol li.rank_2 div span.rangeText{color: #f9813a;}
+.refer-page-wrapper .otherprizes ol li.rank_3 div span.rangeText{color: #f9813a;}
+.refer-page-wrapper .otherprizes ol li.rank_4 div span.rangeText{color: #a7c424;}
+.refer-page-wrapper .otherprizes ol li.rank_5 div span.rangeText{color: #82c7d2;}
+.refer-page-wrapper .otherprizes ol li.rank_6 div span.rangeText{color: #eb497b;}
+.refer-page-wrapper .otherprizes ol li div{text-align: left; width: calc(100% - 100px);padding-top: 5px;}
+.refer-page-wrapper .otherprizes ol li img{right: 10px;}
+.refer-page-wrapper .otherprizes ol li div span.prize{font-size: 14px; color: #000000;}
+.refer-page-wrapper ul, .refer-page-wrapper ol{  list-style: disc; padding-left: 10px;}
+
+.token-prize-wrapper .banner{
+    background: url(/photos/prizebg.svg);
+    text-align: center;
+    padding: 20px;
+}
+.token-prize-wrapper h1{
+    display: block;
+    color: #ce4649;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 800;
+}
+.token-prize-wrapper h2{
+    display: block;
+    color: #1a1a1a;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.token-prize-wrapper .prizestars{
+    width: 50%;
+    margin-top: 20px;
+}
+.token-prize-wrapper .prize{
+    width: 60%;
+}
+.token-prize-wrapper ol {
+    padding-left: 15px;
+    list-style-type: decimal;
+}

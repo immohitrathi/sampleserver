@@ -1,0 +1,84 @@
+.gamescss{
+    height: 50px;
+    border-radius: 4px;
+    background: url(/photos/astrobg.svg) no-repeat ;
+    background-size: cover;
+    color:#fff;
+    padding:10px 20px 34px 20px;
+    h1{
+        font-size: 24px;
+        margin-bottom: 5px;
+        font-family: NotoSans-Bold;
+        color:#fff;
+    }
+    label{
+        font-size: 12px;
+        color:#fff;
+        width:85%;
+    }
+}
+
+.gamescont{
+    padding-bottom:16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-bottom:solid 3px #f6f6f6;
+    h3{
+        font-family:NotoSans-Bold;
+        font-size:16px;
+        line-height: 48px;
+        padding-left:16px;
+        text-transform: uppercase;
+    }
+    li{
+        display:inline-block;
+        width:240px;
+        border-radius: 4px;
+        overflow:hidden;
+        margin-right:16px;
+        background-color:#fff;
+        box-shadow:  0 1px 8px 0 rgba(0, 0, 0, 0.13);
+        .imgcont{
+            width:100%;
+            height:115px;
+            overflow:hidden;
+            img{
+                width:100%;
+            }
+        }
+        label{
+            font-family: NotoSans-SemiBold;
+            color:#2e2e2e;
+            font-size:13px;
+            line-height:22px;
+            letter-spacing: 0.16px;
+            margin:0px;
+            padding: 4px 8px 8px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        &:first-child{
+          margin-left:16px;  
+        }
+    }
+
+    .gridcont{
+        padding:0px 0px 0px 16px;
+        
+        li{
+            width:calc(50% - 16px);
+            margin-bottom:16px;
+            margin-left:0px;
+            .imgcont{
+                height:88px;
+            }
+        }
+    }
+    .seeall{
+        line-height: 30px;
+        padding-top:0px;
+    }
+}

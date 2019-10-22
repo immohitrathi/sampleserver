@@ -1,0 +1,174 @@
+
+.headerc{
+	padding-top: 50px;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 9;
+    background: #fff;
+}
+
+.sheader{
+	position: fixed;
+	top: 0px;
+	height: 41px;
+	padding-top: 50px;
+	background-color: #fff;
+	z-index: 9;
+	width:100vw;
+	header{
+		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+	}
+}
+
+header{
+	display:flex;
+	width:calc(100vw -  32px);
+	height:18px;
+	padding:16px;
+	justify-content: flex-start;
+	flex-direction: row;
+	align-items: center;
+	position:fixed;
+	background-color:#fff;
+	z-index:9;
+	top:0px;
+	i{
+		display:block;
+	}
+	i.logo{
+		width:24px;
+		height: 24px;
+		background:url(/images/np-logo.svg) no-repeat 50% 50%;
+	}
+	i.points{
+		width: 42px;
+		height: 22px;
+		background: url(/images/icons.svg) no-repeat 0px -929px;
+		margin-left:auto;
+		margin-right: 24px;
+		padding-left:26px;
+
+		font-family: NotoSans-SemiBold;
+		font-size: 12px;
+		line-height: 22px;
+		letter-spacing: 0.2px;
+		text-align: left;
+		color: #1a1a1a;
+	}
+	i.ham{
+		width: 24px;
+		height: 24px;
+		margin-left:auto;
+		background: url(/images/icons.svg) no-repeat -24px -2009px;
+		&.active{
+			background-position: -24px -1965px;
+		}
+	}
+	h4{
+		font-family: NotoSans-Bold;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.2px;
+		color: #1a1a1a;
+	}
+	i.back{
+		width: 24px;
+		height: 24px;
+		background: url(/images/icons.svg) no-repeat -30px -2142px;		
+	}
+
+}
+
+nav{
+	padding:0px 16px 8px;
+	
+	
+	max-height: 0; 
+	transition: height .2s ease-out;
+	overflow: hidden;
+	&.visible{
+		border-top: solid 1px rgba(204, 204, 204, 0.2);
+		max-height: 150px; 
+		display:block;
+		transition: max-height .2s ease-out;
+		.chevron{
+			display:block;
+		}
+	}
+
+	.explore{
+		font-family: NotoSans;
+		font-size: 10px;
+		line-height: 1.6;
+		letter-spacing: 0.2px;
+		color: #999999;
+	}
+	ul{
+		margin-top: 4px;
+		li{
+			display:inline-block;
+			width:20%;
+			a{
+				text-align: center;
+				i{
+					display: block;
+					height:24px;
+					background:url(/images/icons.svg) no-repeat 50% -20px;
+				}
+				span{
+					display: block;
+					font-family: NotoSans;
+					font-size: 12px;
+					line-height: 1.33;
+					letter-spacing: 0.2px;
+					margin-top:8px;
+				}
+			}
+			&.dmusic{
+				i{
+					background-position: 50% -196px;
+				}
+			}
+			&.dgames{
+				i{
+					background-position: 50% -64px;
+				}
+			}
+			&.dcricket{
+				i{
+					background-position: 50% -152px;
+				}
+			}
+			&.dfunnies{
+				i{
+					background-position: 50% -108px;
+				}
+			}
+		}
+	}
+}
+
+.chevron{
+	display:none;
+	position: absolute;
+	height: 3px;
+	transform: rotate(180deg);
+	z-index: 9;
+	top: 47px;
+	right: 20px;
+  }
+.chevron:before, .chevron:after{
+	position:absolute;
+	display:block;
+	content:"";
+	border:8px solid transparent;
+}
+.chevron:before{
+	top:0;
+	border-top-color:rgba(204, 204, 204, 0.2);
+}
+.chevron:after{
+	top:-2px;
+	border-top-color:#fff;
+}

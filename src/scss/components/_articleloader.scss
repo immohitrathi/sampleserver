@@ -1,0 +1,41 @@
+
+
+.dark .news{
+  border-bottom: solid 1px rgba(79,132,232,0.11);
+}
+
+.dark .news label{
+  color:#fff;
+}
+
+.asloader {
+  label{
+    display: block;
+    height: 16px;
+    background:#000;
+    margin-bottom: 15px;
+    background: rgba(79, 139, 232, 0.15);
+    border-radius: 4px;
+    &.small{
+      width: 30%;
+    }
+    &.medium{
+      width: 70%;
+    }
+  }
+  span{
+    display: inline-block;
+    height: 16px;
+    background:#000;
+    margin-bottom: 15px;
+    background: rgba(79, 139, 232, 0.15);
+    border-radius: 4px;
+    &.small{
+      width: 10%;
+      margin-right: 10px;
+    }
+    &.medium{
+      width: 30%;
+    }
+  }
+}

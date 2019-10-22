@@ -1,0 +1,276 @@
+@import "../components/cricketcard";
+
+.indiaonly{
+    padding: 0 10px;
+    margin-bottom: -15px;
+    display: block;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #ababab;
+    text-transform: uppercase;
+}
+
+input[type=checkbox].ios8-switch {
+    position: absolute;
+    margin: 8px 0 0 16px;
+    left: -22px
+}
+
+input[type=checkbox].ios8-switch+label {
+    position: relative;
+    padding: 5px 0 0 50px;
+    line-height: 2em;
+    float:right;
+}
+
+input[type=checkbox].ios8-switch+label:before {
+    top: 3px;
+    width: 40px;
+    background: #b3b3b3
+}
+
+input[type=checkbox].ios8-switch+label:after,input[type=checkbox].ios8-switch+label:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    height: 24px;
+    border-radius: 16px;
+    -webkit-transition: all .1s;
+    transition: all .1s
+}
+
+input[type=checkbox].ios8-switch+label:after {
+    top: 0;
+    width: 24px;
+    background: #f0f0f0
+}
+
+input[type=checkbox].ios8-switch+label:hover:after {
+    box-shadow: 0 0 5px rgba(0,0,0,.3)
+}
+
+input[type=checkbox].ios8-switch:checked+label:after {
+    margin-left: 16px
+}
+
+input[type=checkbox].ios8-switch:checked+label:before {
+    background: #b3b3b3
+}
+
+input[type=checkbox].ios8-switch-sm {
+    margin: 5px 0 0 10px;
+    height: 12px
+}
+
+input[type=checkbox].ios8-switch-sm+label {
+    position: relative;
+    padding: 0 0 0 32px;
+    line-height: 1.3em
+}
+
+input[type=checkbox].ios8-switch-sm+label:before {
+    width: 35px;
+    height: 10px;
+    border-radius: 10px
+}
+
+input[type=checkbox].ios8-switch-sm+label:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px
+}
+
+input[type=checkbox].ios8-switch-sm+label:hover:after {
+    box-shadow: 0 0 3px rgba(0,0,0,.3)
+}
+
+input[type=checkbox].ios8-switch-sm:checked+label:after {
+    margin-left: 18px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 0 3px #d9d9d9;
+}
+
+input[type=checkbox].ios8-switch-sm:checked+label:before {
+    background-color: #7ed321
+}
+
+input[type=checkbox].ios8-switch-lg {
+    margin: 10px 0 0 20px
+}
+
+input[type=checkbox].ios8-switch-lg+label {
+    position: relative;
+    padding: 7px 0 0 60px;
+    line-height: 2.3em
+}
+
+input[type=checkbox].ios8-switch-lg+label:before {
+    width: 50px;
+    height: 30px;
+    border-radius: 20px
+}
+
+input[type=checkbox].ios8-switch-lg+label:after {
+    width: 35px;
+    height: 30px;
+    border-radius: 20px
+}
+
+input[type=checkbox].ios8-switch-lg+label:hover:after {
+    box-shadow: 0 0 8px rgba(0,0,0,.3)
+}
+
+input[type=checkbox].ios8-switch-lg:checked+label:after {
+    margin-left: 20px
+}
+
+
+
+.scont{
+    border-bottom: solid 0.5px #efefef;
+    padding-bottom: 8px;
+    margin-bottom: 6px;
+    margin-top:12px;
+}
+.pointlink{
+    color:#fff;
+    border-radius: 4px;
+    background-image: linear-gradient(98deg, #5166c6, #74ebd5);
+    display: block;
+    line-height: 44px;
+    font-size: 16px;
+    padding:0px 14px;
+    position: relative;
+    &:after{
+        content: '\203A';
+        position: absolute;
+        right: 13px;
+        font-size: 35px;
+        font-family: NotoSans;
+        top: -3px; 
+    }
+}
+
+.upcoming-tabs-table{
+    margin-top:12px;
+    
+    tr {
+        td{
+            color:#2c2c2c;
+            vertical-align: middle;
+            text-align: center;
+            font-family: NotoSans-SemiBold;
+        }
+    }
+    .vs{
+        font-size:9px;
+        color:#999;
+    }
+}
+
+.ucont{
+    padding-bottom: 4px;
+    li{
+        width: 70%;
+        display: inline-block;
+    }
+    
+}
+
+.seeall{
+    padding-right: 15px;
+    padding-top: 11px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.pointst{
+    margin-top:15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.11);
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 10px;
+    th{
+        font-family: NotoSans-SemiBold;
+        color:#a7a7a7 !important;
+        letter-spacing: 0.2px;  
+        font-size:12px;     
+    }
+    th, td{
+        color:#2c2c2c;
+        padding: 10px 3px;
+        font-size:12px;
+        border-bottom: solid 1px #f3f3f3;
+        vertical-align: middle;
+        img{
+            max-width: unset;
+            height:30px;
+        }
+    }
+    tr:last-child{
+        td{
+            border-bottom:none;
+        }
+    }
+    td:nth-child(2), td:nth-child(6){
+        font-family: NotoSans-SemiBold;
+    }
+}
+
+
+.ctabs{
+    display: flex;
+    border: solid 0.5px #e8e8e8;
+    border-radius: 4px;
+    a{
+        color:#ce4649;
+        display:inline-block;
+        font-size:13px;
+        flex-grow: 1;
+        flex-basis: 0;
+        line-height: 44px;
+        text-align: center;
+        &.active{
+            box-shadow: 0 1px 8px 0 rgba(245, 117, 120, 0.4);
+            background-color: #ce4649;
+            color:#fff;
+            border-radius: 4px;
+        }
+    }
+}
+
+
+
+#upcomingMatches{
+    background: #f5f5f5;
+    padding-top: 1px;
+    margin-top: 15px;
+}
+
+
+#noresult{
+    display:none;
+    text-align: center;
+    padding:50px 20px;
+    p{
+        padding-top:24px;
+        font-family: NotoSans-SemiBold;
+        font-size:16px;
+        letter-spacing: 0.6px;
+    }
+}
+
+.upcoming{
+    .matchdate{
+        font-family: NotoSans-SemiBold;
+    }
+}
+
+.cricket{
+    padding-bottom:70px;
+}
+

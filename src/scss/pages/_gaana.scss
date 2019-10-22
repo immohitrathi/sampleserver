@@ -1,0 +1,7 @@
+.gaanacont{
+    iframe{
+        width:calc(100vw - 16px);
+        height: calc(100vh - 120px);
+        -webkit-overflow-scrolling: touch;
+    }
+}

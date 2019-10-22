@@ -1,0 +1,2 @@
+export const FETCH_LISTING = 'FETCH_LISTING';
+export const NEXT_LISTING = 'NEXT_LISTING';

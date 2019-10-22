@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>xhdpi/Ghana</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Cricket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Country-flags" transform="translate(-97.000000, -79.000000)">
+            <g id="Ghana" transform="translate(97.000000, 79.000000)">
+                <g id="Flag_of_Ghana" transform="translate(0.000000, 6.000000)" fill-rule="nonzero">
+                    <rect id="Rectangle" fill="#006B3F" x="0" y="0" width="40" height="27"></rect>
+                    <rect id="Rectangle" fill="#FCD116" x="0" y="0" width="40" height="18"></rect>
+                    <rect id="Rectangle" fill="#CE1126" x="0" y="0" width="40" height="9"></rect>
+                    <polygon id="Path" fill="#000000" points="20 9 22.8881778 18 15.3268444 12.43773 24.6731556 12.43773 17.1118222 18"></polygon>
+                </g>
+                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
